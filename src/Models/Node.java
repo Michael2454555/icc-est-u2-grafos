@@ -1,16 +1,15 @@
- 
 package Models;
 
-import java.util.HashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
-public class Node {
+public class Node implements Comparable<Node> {
     private int value;
     public Set<Node> neighboards;
 
     public Node(int value) {
         this.value = value;
-        this.neighboards = new HashSet<>();
+        this.neighboards = new TreeSet<>();
     }
 
     public int getValue() {
@@ -38,6 +37,12 @@ public class Node {
     @Override
     public String toString() {
         return "Node [value=" + value + ", neighboards=" + neighboards + "]";
+    }
+
+    @Override
+    public int compareTo(Node o) {
+        return Integer.compare(this.value, o.value);
+
     }
 
 }
