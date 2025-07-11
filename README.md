@@ -1,18 +1,68 @@
-## Getting Started
+# Práctica de Grafos
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## 📌 Información General
 
-## Folder Structure
+- **Título:** Práctica de Grafos
+- **Asignatura:** Estructura de Datos
+- **Carrera:** Computación
+- **Estudiante:** Michael Yumbla
+- **Fecha:** 11/07/2025
+- **Profesor:** Ing. Pablo Torres
 
-The workspace contains two folders by default, where:
+---
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## 🛠️ Descripción
+### Funcionamiento
+Creación del grafo: Se instancia un objeto Graph llamado grafo1.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Adición de nodos: Se crean 9 nodos (n0 a n5, n7 a n9) usando el método addNode().
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Conexión de nodos: Se establecen conexiones (aristas) entre los nodos con addEdge().
 
-## Dependency Management
+Impresión del grafo: Finalmente se imprime la estructura del grafo con printGraph().
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+### Como funciona
+La clase Graph gestiona los nodos y sus conexiones internamente.
+
+Cada Node representa un vértice del grafo.
+
+Los métodos addNode() y addEdge() construyen la estructura de datos del grafo.
+
+printGraph() muestra la representación visual de las conexiones.
+
+---
+
+## 🚀 Ejecución
+
+Para ejecutar el proyecto:
+
+1. Compila el código:
+    ```bash
+    javac App.java
+    ```
+2. Ejecuta la aplicación:
+    ```bash
+    java App
+    ```
+
+---
+
+## 🧑‍💻 Ejemplo de Entrada
+
+```plaintext
+Nombre: Michael Yumbla
+Vertex:5
+0-->Vertex:7
+3-->8-->Vertex:9
+3-->Vertex:3
+0-->2-->4-->7-->9-->Vertex:1
+0-->2-->4-->8-->Vertex:2
+1-->3-->Vertex:8
+1-->7-->Vertex:4
+1-->3-->Vertex:0
+1-->3-->5-->
+```
+## Imagen 
+![alt text](image.png)
+---
+

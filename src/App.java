@@ -4,6 +4,7 @@ import Controllers.Graph;
 
 public class App {
     public static void main(String[] args) throws Exception {
+        System.out.println("Nombre: Michael Yumbla");
         Graph grafo1 = new Graph();
         Node n0 = grafo1.addNode(0);
         Node n1 = grafo1.addNode(1);
